@@ -1,0 +1,15 @@
+Meta:
+  description: Custom config for assembled form.
+Inputs:
+  formCustomVersion:
+    name: formCustomVersion
+    type: hidden
+    value: "[MC2_DLS_Dec_2022]"
+    form: dsp
+
+Checklist:
+  items:
+    - name: Provide project info & contacts
+    - name: Specify resources to be shared
+    - name: Submit this form
+    

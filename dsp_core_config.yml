@@ -1,0 +1,221 @@
+Meta:
+  description: Core input config for collecting info about project and data sharing plan.
+Inputs:
+  dspCoreVersion:
+    name: dspCoreVersion
+    type: hidden
+    value: "[DSP_Core_Version_Apr_2022]"
+    form: dsp
+  datasetTable:
+    id: datasetTable
+    name: datasetTable
+    type: table-inputs
+    add: Yes
+    inputs:
+      - name: depositLabel
+        display: Label
+        type: text
+        form: dsp
+        title: provide label to be used as repository dataset name
+        placeholder: e.g. "Sequencing of Cohort1"
+      - name: depositAssay
+        display: Assay
+        type: select-schema
+        schema: https://raw.githubusercontent.com/mc2-center/data-models/main/mc2.model.jsonld
+        range: bts:DatasetAssay
+        sort: true
+        blankstr: true
+        form: dsp
+        title: select specific assay used
+        class: compact
+      - name: dataFormat
+        display: Format
+        type: select-schema
+        schema: https://raw.githubusercontent.com/mc2-center/data-models/main/mc2.model.jsonld
+        range: bts:DatasetFileFormats
+        sort: true
+        blankstr: true
+        form: dsp
+        title: select file format of data
+        class: compact
+      - name: depositSamples
+        display: Sample count
+        type: number
+        form: dsp
+        size: 6
+        title: number of samples associated with dataset
+      - name: depositSpecies
+        display: Species
+        type: select-schema
+        schema: https://raw.githubusercontent.com/mc2-center/data-models/main/mc2.model.jsonld
+        range: bts:DatasetSpecies
+        title: species sampled in assay
+        form: dsp
+        class: compact
+      - name: depositDatabase
+        display: Data repository
+        type: text
+        form: dsp
+        title: Storage repository for the dataset
+      - name: depositDeadline
+        display: Planned upload date
+        type: date
+        form: dsp
+        title: when the data is expected to be completely deposited
+  toolTable:
+    id: toolTable
+    name: toolTable
+    type: table-inputs
+    add: Yes
+    inputs:
+      - name: toolLabel
+        display: Tool name
+        type: text
+        form: dsp
+        title: provide a name for the tool to be shared
+        placeholder: e.g. "New tool"
+      - name: toolOperation
+        display: Tool function
+        type: select-schema
+        schema: https://raw.githubusercontent.com/mc2-center/data-models/main/mc2.model.jsonld
+        range: bts:ToolOperation
+        sort: true
+        blankstr: true
+        form: dsp
+        title: provide a term to describe to the tool usage
+        class: compact
+      - name: toolType
+        display: Type
+        type: select-schema
+        schema: https://raw.githubusercontent.com/mc2-center/data-models/main/mc2.model.jsonld
+        range: bts:ToolType
+        sort: true
+        blankstr: true
+        form: dsp
+        title: select the type of implementation for the tool
+        class: compact
+      - name: toolTopic
+        display: Topic
+        type: select-schema
+        schema: https://raw.githubusercontent.com/mc2-center/data-models/main/mc2.model.jsonld
+        range: bts:ToolTopic
+        sort: true
+        blankstr: true
+        form: dsp
+        title: select the research topic the tool is used in
+        class: compact
+      - name: depositDeadline
+        display: Planned upload date
+        type: date
+        form: dsp
+        title: when the data is expected to be completely deposited
+  modelTable:
+    id: modelTable
+    name: modelTable
+    type: table-inputs
+    add: Yes
+    inputs:
+      - name: depositLabel
+        display: Label
+        type: text
+        form: dsp
+        title: provide label to be used as the model name
+        placeholder: e.g. "Mouse model 1"
+      - name: modelClass
+        display: Class
+        type: select
+        options: ['', 'Organism', 'Xenograft', 'Organoid']
+        title: broad class to describe the model
+        form: dsp
+        class: compact
+      - name: modelSpecies
+        display: Species
+        type: select-schema
+        schema: https://raw.githubusercontent.com/mc2-center/data-models/main/mc2.model.jsonld
+        range: bts:DatasetSpecies
+        title: species the biological model is based in
+        form: dsp
+        class: compact
+      - name: modelTumor
+        display: Tumor
+        type: select-schema
+        schema: https://raw.githubusercontent.com/mc2-center/data-models/main/mc2.model.jsonld
+        range: bts:DatasetTumorType
+        title: tumor type the system is intended to model
+        form: dsp
+        class: compact
+      - name: depositSamples
+        display: Samples
+        type: number
+        form: dsp
+        size: 6
+        title: number of models associated with entry
+      - name: depositDeadline
+        display: Planned upload date
+        type: date
+        form: dsp
+        title: when the data is expected to be completely deposited
+  projectTitle:
+    name: projectTitle
+    id: projectTitle
+    type: text
+    size: 50
+    form: dsp
+  projectDescription:
+    name: projectDescription
+    type: textarea
+    class: wide-textarea
+    form: dsp
+  projectGrantId:
+     name: grantId
+     type: select-schema
+     schema: https://raw.githubusercontent.com/mc2-center/data-models/main/mc2.model.jsonld
+     range: bts:ProjectGrantNumber
+     multiple: true
+     title: Number of grant associated with resources
+     form: dsp
+     class: compact
+  projectPI:
+    name: projectPI
+    type: text
+    form: dsp
+  projectPIEmail:
+    name: projectPIEmail
+    type: email
+    form: dsp
+  projectPOC:
+    name: projectPOC
+    type: text
+    form: dsp
+  projectPOCEmail:
+    name: projectPOCEmail
+    type: email
+    form: dsp
+  projectSynPrincipals:
+    name: projectSynPrincipals
+    type: text
+    form: dsp
+    title: comma-separated for multiple Ids
+  projectInstitution:
+    name: projectInstitution
+    type: text
+    form: dsp
+  projectEndDate:
+    name: projectEndDate
+    type: date
+    form: dsp
+  sharingRestriction:
+    name: sharingRestriction
+    type: textarea
+    form: dsp
+  filledDate:
+    name: filledDate
+    id: filled-date
+    type: date
+    form: dsp
+  submit:
+    form: dsp
+    action: https://submit-form.com/NZmGhAd3
+    
+
+

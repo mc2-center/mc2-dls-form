@@ -1,0 +1,54 @@
+---
+title: "MC2 Data Landscape Survey"
+author: "Sage Bionetworks"
+date: ""
+output:
+  html_document:
+    css: style.css
+    includes:
+      in_header: header.html
+      in_footer: footer.html
+    theme: paper
+  pdf_document: default
+params:
+  data: null
+  defaultfundingAgencyFullName: National Cancer Institute
+  DCC: Multi-Consortia Coordinating Center
+  embargoPeriod: Variable
+  # -- Section_Data_Sharing -- #
+  dccEmail: mc2center@sagebase.org
+  portalName: Cancer Complexity Knowledge Portal 
+  portalURL: https://www.cancercomplexity.synapse.org/
+  fundingAgency: NCI
+  # embargoPeriod: the embargo period # common params already defined
+  community: MC2
+  # -- DSP_Core -- #
+  dsp_core_config: dsp_core_config.yml
+  # -- Custom meta/parameters for this form -- #
+  dsp_custom_config: dsp_custom_config.yml
+  # -- Gov -- #
+  #SA_config: gov_SA_config.yml
+  #addendum_2_config: addendum_2_config.yml
+---
+
+```{r setup, echo=FALSE, message=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library(formd)
+formChecklistContext(params$dsp_custom_config)
+.F <- formInputContext(params$dsp_custom_config, params$data)
+```
+
+
+```{r child = 'MC2_core.Rmd'}
+```
+
+
+**Form Date** `r RIA(.F$filledDate)`
+
+`r formSubmit(.F$submit)`
+
+We will review and send you a copy of what we have on file, but feel free to use `Ctrl+P` to save a copy now.  
+If any adjustments need to be made, please email `r params$dccEmail` and your `r params$fundingAgency` contact.
+
+<!--hidden fields for tracking form meta, e.g. versions" -->
+`r RIA(.F$formCustomVersion)`
