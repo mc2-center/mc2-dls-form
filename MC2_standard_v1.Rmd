@@ -1,5 +1,5 @@
 ---
-title: "MC2 Data Landscape Survey"
+title: ""
 author: "Sage Bionetworks"
 date: ""
 output:
@@ -19,6 +19,7 @@ params:
   dccEmail: mc2center@sagebase.org
   portalName: Cancer Complexity Knowledge Portal 
   portalURL: https://www.cancercomplexity.synapse.org/
+  synURL: https://www.synapse.org/
   fundingAgency: NCI
   # embargoPeriod: the embargo period # common params already defined
   community: MC2
@@ -27,7 +28,7 @@ params:
   # -- Custom meta/parameters for this form -- #
   dsp_custom_config: dsp_custom_config.yml
   # -- Gov -- #
-  #SA_config: gov_SA_config.yml
+  SA_config: gov_SA_config.yml
   #addendum_2_config: addendum_2_config.yml
 ---
 
@@ -37,12 +38,17 @@ library(formd)
 formChecklistContext(params$dsp_custom_config)
 .F <- formInputContext(params$dsp_custom_config, params$data)
 ```
+# The MC^2^ Center Data Landscape Survey 
+![](MC2Logo-FNL-FullNameHRZ.png)
 
+```{r child = 'Intro_section.Rmd'}
+```
 
 ```{r child = 'MC2_core.Rmd'}
 ```
 
-
+```{r child = 'Governance_questions.Rmd'}
+```
 **Form Date** `r RIA(.F$filledDate)`
 
 `r formSubmit(.F$submit)`

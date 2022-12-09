@@ -120,11 +120,11 @@ Inputs:
         type: text
         form: dsp
         title: provide label to be used as the model name
-        placeholder: e.g. "Mouse model 1"
+        placeholder: e.g. "Experimental model 1"
       - name: modelClass
         display: Class
         type: select
-        options: ['', 'Organism', 'Xenograft', 'Organoid']
+        options: ['', 'Device','Organism', 'Xenograft', 'Organoid']
         title: broad class to describe the model
         form: dsp
         class: compact
@@ -144,17 +144,11 @@ Inputs:
         title: tumor type the system is intended to model
         form: dsp
         class: compact
-      - name: depositSamples
-        display: Samples
-        type: number
-        form: dsp
-        size: 6
-        title: number of models associated with entry
       - name: depositDeadline
-        display: Planned upload date
+        display: Planned date available
         type: date
         form: dsp
-        title: when the data is expected to be completely deposited
+        title: when the resource is expected to be ready for reuse
   projectTitle:
     name: projectTitle
     id: projectTitle

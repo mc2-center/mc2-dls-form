@@ -1,0 +1,38 @@
+---
+title: "Introductory info"
+author: "Sage Bionetworks"
+date: "12/9/2022"
+output: html_document
+params:
+  helpDocsLink: NA
+  dccEmail: mc2center@sagebase.org
+  DCC: MC2 Center
+  portalName: Cancer Complexity Knowledge Portal
+  portalURL: https://www.cancercomplexity.synapse.org/
+  synURL: https://www.synapse.org/
+  fundingAgency: NCI
+  embargoPeriod: the embargo period
+  community: MC2
+---
+
+## Building the MC^2^ Center Data Landscape
+
+The Multi-Consortia Coordinating (MC^2^) Center at Sage Bionetworks is intended to promote data, resource, and expertise exchange among members of the six associated consortia, including:
+
+- Cancer Systems Biology Consortium
+- Physical Sciences in Oncology Network
+- Cancer Tissue Engineering Collaborative
+- Cellular Cancer Biology Imaging Research initiative
+- Metastasis Research Network
+- Patient-Derived Models of Cancer
+
+Projected resource curation process:
+
+1. Resources are generated and transferred to repositories 
+2. Metadata describing the resource(s) are curated by Sage Bionetworks
+3. Sage Bionetworks stores metadata using the secure [Synapse platform](`r params$synURL`)
+4. Resources are listed on the [`r params$portalName`](`r params$portalURL`)
+
+**Please note**: Sage Bionetworks is a data coordinating center and does not intend to store or handle datasets, tools, or resources.
+
+To help Sage Bionetworks implement resource sharing within the MC^2^ Center, we are requesting that all members provide some information on the projects they are working on. Help us learn how we can best support your work by sharing some preliminary details on the datasets, computational tools and models, and experimental models you plan to share over the next year!

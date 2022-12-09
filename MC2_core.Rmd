@@ -1,7 +1,7 @@
 ---
 title: "MC2 Data Landscape Survey"
 author: "Sage Bionetworks"
-date: "12/7/2022"
+date: "12/9/2022"
 output:
   html_document:
     css: style.css
@@ -42,21 +42,26 @@ suppressPackageStartupMessages(library(formd))
 **Project End Date** `r RIA(.F$projectEndDate)`
 
 
-## Resources to be shared
+## Resource sharing information
 
 To help data sharing logistics, please complete the information requested below about the resources to be shared.
-The elements of the resource sharing plan are as follows:
 
 ### Datasets
 
-- **What**: the nature of the data being shared and how they relate to your overall project, including ‘assay’, ‘format’ and ‘species’, which are controlled vocabulary terms.
+- **Assay**: Controlled field; the assay used to generate the dataset that will be shared
 
-- **How much**: how many samples are you measuring? Samples can be considered aliquots/specimens for which you are running a single experiment. If you have multiple experiments, then each gets a separate row in the table below. In the case of single-cell assays, each cell is considered to be a sample.
+- **Format**: Controlled field; the format used to store the shared data
 
-- **When**: when the resource will be uploaded to the identified storage service.
+- **Sample count**: The number of samples for which data will be shared. For single cell experiments, each cell should be counted as a single sample.
+
+- **Species**: Controlled field; the species of origin for the dataset being shared. _Human-derived data may require specific resource sharing considerations._
+
+- **Data repository**: Name of the storage service where data will be housed.
+
+- **Planned upload date**: The date by which you plan to upload data to the identified repository.
 
 <!-- Deposit table starts here -->
-#### Datasets to be deposited {#deposits}
+#### Dataset information {#deposits}
 
 `r RIA(.F$datasetTable)`
 
@@ -68,11 +73,11 @@ The elements of the resource sharing plan are as follows:
 
 - **Topic**: Controlled field; general scientific domain the software or model serves.
 
-#### Tools or computational models to be listed {#tools}
+#### Computational tool or model information {#tools}
 
 `r RIA(.F$toolTable)`
 
-### Biological models
+### Experimental models
 
 - **Class**: Controlled field; a broad identifier for the type of model.
 
@@ -80,7 +85,7 @@ The elements of the resource sharing plan are as follows:
 
 - **Tumor**: Controlled field; the type of tumor the model is intended to recapitulate.
 
-#### Biological models to be listed {#models}
+#### Experimental model information {#models}
 
 `r RIA(.F$modelTable)`
 

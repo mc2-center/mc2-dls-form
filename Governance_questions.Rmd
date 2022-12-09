@@ -1,0 +1,34 @@
+---
+title: "Data Governance Assessment"
+author: "Sage Bionetworks"
+date: "12/9/2022"
+output:
+  html_document: default
+  pdf_document: default
+params:
+  SA_config: gov_SA_config.yml
+  data: null
+  dccEmail: mc2center@sagebase.org
+---
+
+```{r echo=FALSE, message=FALSE}
+suppressPackageStartupMessages(library(formd))
+.F <- formInputContext(params$SA_config, params$data)
+```
+
+#### Data Sensitivity Assessment
+
+_Please fill in the following to help us understand the nature of the data and help determine if additional governance forms are needed._
+
+These data:
+
+  `r RIA(.F$govSA_1)`  (1) Are not sensitive (i.e., do not meet any of the criteria below), and can be shared broadly without restriction following the embargo period, if applicable OR
+              
+  `r RIA(.F$govSA_2)`  (2) Are derived from humans OR
+              
+  `r RIA(.F$govSA_3)`  (3) Are not derived from humans but for some other reason cannot be shared openly/need to be shared with restrictions on access or data use after the project period ends OR
+              
+  `r RIA(.F$govSA_4)`  (4) I am not sure whether these data are sensitive.
+
+For governance questions, please email `r params$dccEmail`.
+  
