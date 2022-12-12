@@ -47,6 +47,7 @@ suppressPackageStartupMessages(library(formd))
 To help data sharing logistics, please complete the information requested below about the resources to be shared.
 
 ### Datasets
+**For each assay, please add a separate row to the table below**
 
 - **Assay**: Controlled field; the assay used to generate the dataset that will be shared
 
@@ -66,6 +67,7 @@ To help data sharing logistics, please complete the information requested below 
 `r RIA(.F$datasetTable)`
 
 ### Tools and computational models
+**Please add a separate row for each tool or model to the table below**
 
 - **Function**: Controlled field; the primary functionality of the computational tool or model.
 
@@ -76,9 +78,5 @@ To help data sharing logistics, please complete the information requested below 
 #### Computational tool or model information {#tools}
 
 `r RIA(.F$toolTable)`
-
-#### Experimental model information {#models}
-
-`r RIA(.F$modelTable)`
 
 `r RIA(.F$dspCoreVersion)`

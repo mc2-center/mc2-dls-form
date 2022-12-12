@@ -15,7 +15,7 @@ params:
   community: MC2
 ---
 
-## Building the MC^2^ Center Data Landscape
+## Data Landscape Survey
 
 The Multi-Consortia Coordinating (MC^2^) Center at Sage Bionetworks is intended to promote data, resource, and expertise exchange among members of the six associated consortia, including:
 
@@ -28,11 +28,11 @@ The Multi-Consortia Coordinating (MC^2^) Center at Sage Bionetworks is intended 
 
 Projected resource curation process:
 
-1. Resources are generated and transferred to repositories 
+1. Resources are generated and transferred to repositories (independently by generators or guided by Sage)
 2. Metadata describing the resource(s) are curated by Sage Bionetworks
 3. Sage Bionetworks stores metadata using the secure [Synapse platform](`r params$synURL`)
 4. Resources are listed on the [`r params$portalName`](`r params$portalURL`)
 
-**Please note**: Sage Bionetworks is a data coordinating center and does not intend to store or handle datasets, tools, or resources.
+**Please note**: Sage Bionetworks is a data coordinating center and does not intend to store datasets, tools, or resources for MC^2^. Our goal is to help ensure data is FAIR (Findable, Accessible, Interoperable, and Reusable) and housed in publicly-available repositories. 
 
-To help Sage Bionetworks implement resource sharing within the MC^2^ Center, we are requesting that all members provide some information on the projects they are working on. Help us learn how we can best support your work by sharing some preliminary details on the datasets, computational tools and models, and experimental models you plan to share over the next year!
+To help Sage Bionetworks implement resource sharing within the MC^2^ Center, we are requesting that all members provide some information on the projects they are working on. Help us learn how we can best support your work by sharing some preliminary details on the datasets, computational tools, and models you plan to share over the next year!

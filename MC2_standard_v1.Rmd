@@ -38,7 +38,6 @@ library(formd)
 formChecklistContext(params$dsp_custom_config)
 .F <- formInputContext(params$dsp_custom_config, params$data)
 ```
-# The MC^2^ Center Data Landscape Survey 
 ![](MC2Logo-FNL-FullNameHRZ.png)
 
 ```{r child = 'Intro_section.Rmd'}
