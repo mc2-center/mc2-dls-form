@@ -77,14 +77,6 @@ To help data sharing logistics, please complete the information requested below 
 
 `r RIA(.F$toolTable)`
 
-### Experimental models
-
-- **Class**: Controlled field; a broad identifier for the type of model.
-
-- **Species**: Controlled field; species identifier for the organism or tissue in which the model was built.
-
-- **Tumor**: Controlled field; the type of tumor the model is intended to recapitulate.
-
 #### Experimental model information {#models}
 
 `r RIA(.F$modelTable)`
