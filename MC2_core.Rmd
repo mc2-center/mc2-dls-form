@@ -35,8 +35,6 @@ suppressPackageStartupMessages(library(formd))
 
 **Email Address of Point of Contact** `r RIA(.F$projectPOCEmail)`
 
-**Synapse User IDs with Project Admin Access** `r RIA(.F$projectSynPrincipals)`
-
 **Name of Institution** `r RIA(.F$projectInstitution)`
 
 **Project End Date** `r RIA(.F$projectEndDate)`
@@ -44,7 +42,7 @@ suppressPackageStartupMessages(library(formd))
 
 ## Resource sharing information
 
-To help data sharing logistics, please complete the information requested below about the resources to be shared.
+To help ensure we are equipped to support sharing your resources, please provide the information requested below about the datasets, tools, and models your program is working on.
 
 ### Datasets
 **For each assay, please add a separate row to the table below**
