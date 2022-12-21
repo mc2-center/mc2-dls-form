@@ -35,6 +35,7 @@ params:
 ```{r setup, echo=FALSE, message=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 library(formd)
+load(file = "formd-mc2.RData")
 formChecklistContext(params$dsp_custom_config)
 .F <- formInputContext(params$dsp_custom_config, params$data)
 ```
