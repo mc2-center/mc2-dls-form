@@ -33,6 +33,6 @@ Projected resource curation process:
 3. Sage Bionetworks stores metadata using the secure [Synapse platform](`r params$synURL`)
 4. Resources are listed on the [`r params$portalName`](`r params$portalURL`)
 
-**Please note**: Sage Bionetworks is a data coordinating center and does not intend to store datasets, tools, or resources for MC^2^. Our goal is to help ensure data is FAIR (Findable, Accessible, Interoperable, and Reusable) and housed in publicly-available repositories. 
+**Please note**: Sage Bionetworks does not intend to provide centralized storage for datasets, tools, or resources for the MC^2^ Center. Our goal is to help ensure data is FAIR (Findable, Accessible, Interoperable, and Reusable) and housed in publicly-available repositories. 
 
 To help Sage Bionetworks implement resource sharing within the MC^2^ Center, we are requesting that all members provide some information on the projects they are working on. Help us learn how we can best support your work by sharing some preliminary details on the datasets, computational tools, and models you plan to share over the next year!

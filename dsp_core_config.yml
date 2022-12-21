@@ -20,24 +20,24 @@ Inputs:
         placeholder: e.g. "Sequencing of Cohort1"
       - name: depositAssay
         display: Assay
-        type: select-schema
+        type: fill
         schema: https://raw.githubusercontent.com/mc2-center/data-models/main/mc2.model.jsonld
         range: bts:DatasetAssay
         sort: true
-        blankstr: true
         form: dsp
         title: select specific assay used
         class: compact
+        list: assayList
       - name: dataFormat
         display: Format
-        type: select-schema
+        type: fill
         schema: https://raw.githubusercontent.com/mc2-center/data-models/main/mc2.model.jsonld
         range: bts:DatasetFileFormats
         sort: true
-        blankstr: true
         form: dsp
         title: select file format of data
         class: compact
+        list: formatList
       - name: depositSamples
         display: Sample count
         type: number
@@ -46,12 +46,13 @@ Inputs:
         title: number of samples associated with dataset
       - name: depositSpecies
         display: Species
-        type: select-schema
+        type: fill
         schema: https://raw.githubusercontent.com/mc2-center/data-models/main/mc2.model.jsonld
         range: bts:DatasetSpecies
         title: species sampled in assay
         form: dsp
         class: compact
+        list: speciesList
       - name: depositDatabase
         display: Data repository
         type: text
@@ -76,34 +77,34 @@ Inputs:
         placeholder: e.g. "New tool"
       - name: toolOperation
         display: Tool function
-        type: select-schema
+        type: fill
         schema: https://raw.githubusercontent.com/mc2-center/data-models/main/mc2.model.jsonld
         range: bts:ToolOperation
         sort: true
-        blankstr: true
         form: dsp
         title: provide a term to describe to the tool usage
         class: compact
+        list: toolOpList
       - name: toolType
         display: Type
-        type: select-schema
+        type: fill
         schema: https://raw.githubusercontent.com/mc2-center/data-models/main/mc2.model.jsonld
         range: bts:ToolType
         sort: true
-        blankstr: true
         form: dsp
         title: select the type of implementation for the tool
         class: compact
+        list: typeList
       - name: toolTopic
         display: Topic
-        type: select-schema
+        type: fill
         schema: https://raw.githubusercontent.com/mc2-center/data-models/main/mc2.model.jsonld
         range: bts:ToolTopic
         sort: true
-        blankstr: true
         form: dsp
         title: select the research topic the tool is used in
         class: compact
+        list: topicList
       - name: depositDeadline
         display: Planned upload date
         type: date

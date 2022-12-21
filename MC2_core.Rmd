@@ -16,6 +16,7 @@ params:
 
 ```{r echo=FALSE, message=FALSE}
 suppressPackageStartupMessages(library(formd))
+load(file = "formd-mc2.RData")
 .F <- formInputContext(params$dsp_core_config, params$data)
 ```
 
@@ -40,13 +41,16 @@ suppressPackageStartupMessages(library(formd))
 **Project End Date** `r RIA(.F$projectEndDate)`
 
 
-## Resource sharing information
+## Resource sharing details
 
-To help ensure we are equipped to support sharing your resources, please provide the information requested below about the datasets, tools, and models your program is working on.
+To help Sage Bionetworks understand how we can support your resource sharing efforts, please provide the information requested below concerning the resources to be shared.
+
+### Directions for survey
+
+**Type your answers into the table cells below. Controlled fields will display terms we have on file when you begin typing. You are not required to select a term from this list if a suitable entry is not currently available. For each assay, tool, or model, please add a separate row to the corresponding table.**
 
 ### Datasets
-**For each assay, please add a separate row to the table below**
-
+#### Fields:
 - **Assay**: Controlled field; the assay used to generate the dataset that will be shared
 
 - **Format**: Controlled field; the format used to store the shared data
@@ -65,8 +69,7 @@ To help ensure we are equipped to support sharing your resources, please provide
 `r RIA(.F$datasetTable)`
 
 ### Tools and computational models
-**Please add a separate row for each tool or model to the table below**
-
+#### Fields:
 - **Function**: Controlled field; the primary functionality of the computational tool or model.
 
 - **Type**: Controlled field; how the tool or model has been implemented for access by other users.
