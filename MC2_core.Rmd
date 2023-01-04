@@ -1,7 +1,7 @@
 ---
 title: "MC2 Data Landscape Survey"
 author: "Sage Bionetworks"
-date: "12/9/2022"
+date: "1/4/2023"
 output:
   html_document:
     css: style.css
@@ -10,6 +10,8 @@ output:
       in_footer: footer.html
   pdf_document: default
 params:
+  portalName: Cancer Complexity Knowledge Portal
+  portalURL: https://www.cancercomplexity.synapse.org/
   dsp_core_config: dsp_core_config.yml
   data: "../../../../../tests/test.json" # required if rendering to PDF
 ---
@@ -20,7 +22,7 @@ load(file = "formd-mc2.RData")
 .F <- formInputContext(params$dsp_core_config, params$data)
 ```
 
-## Project Details
+## Project information
 
 **Project Title** `r RIA(.F$projectTitle)`
 
@@ -41,9 +43,13 @@ load(file = "formd-mc2.RData")
 **Project End Date** `r RIA(.F$projectEndDate)`
 
 
-## Resource sharing details
+## Resource information
 
-To help Sage Bionetworks understand how we can support your resource sharing efforts, please provide the information requested below concerning the resources to be shared.
+By providing information on the datasets, computational tools, and models you plan to share over the next year, you will help us determine how we prioritize and support:
+
+- metadata standards adoption
+- data transfer to [NIH-supported repositories](https://www.nlm.nih.gov/NIHbmic/domain_specific_repositories.html)
+- expansion of the [`r params$portalName`](`r params$portalURL`)
 
 ### Directions for survey
 

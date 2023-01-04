@@ -54,7 +54,7 @@ formChecklistContext(params$dsp_custom_config)
 `r formSubmit(.F$submit)`
 
 We will review and send you a copy of what we have on file, but feel free to use `Ctrl+P` to save a copy now.  
-If any adjustments need to be made, please email `r params$dccEmail` and your `r params$fundingAgency` contact.
+If any adjustments need to be made, please email `r params$dccEmail`.
 
 <!--hidden fields for tracking form meta, e.g. versions" -->
 `r RIA(.F$formCustomVersion)`
