@@ -1,7 +1,7 @@
 ---
 title: "MC2 Data Landscape Survey"
 author: "Sage Bionetworks"
-date: "1/4/2023"
+date: "1/10/2023"
 output:
   html_document:
     css: style.css
@@ -18,7 +18,7 @@ params:
 
 ```{r echo=FALSE, message=FALSE}
 suppressPackageStartupMessages(library(formd))
-load(file = "formd-mc2.RData")
+load(file = "formd-mc2.RData") #load modified functions
 .F <- formInputContext(params$dsp_core_config, params$data)
 ```
 
@@ -48,7 +48,7 @@ load(file = "formd-mc2.RData")
 By providing information on the datasets, computational tools, and models you plan to share over the next year, you will help us determine how we prioritize and support:
 
 - metadata standards adoption
-- data transfer to [NIH-supported repositories](https://www.nlm.nih.gov/NIHbmic/domain_specific_repositories.html)
+- data transfer to [NIH-supported repositories](https://sharing.nih.gov/data-management-and-sharing-policy/sharing-scientific-data/repositories-for-sharing-scientific-data)
 - expansion of the [`r params$portalName`](`r params$portalURL`)
 
 ### Directions for survey
@@ -57,6 +57,8 @@ By providing information on the datasets, computational tools, and models you pl
 
 ### Datasets
 #### Fields:
+- **Label**: A short, descriptive label for the dataset described in the row
+
 - **Assay**: Controlled field; the assay used to generate the dataset that will be shared
 
 - **Format**: Controlled field; the format used to store the shared data

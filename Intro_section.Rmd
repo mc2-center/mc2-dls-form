@@ -1,7 +1,7 @@
 ---
 title: "Introductory info"
 author: "Sage Bionetworks"
-date: "1/4/2023"
+date: "1/10/2023"
 output: html_document
 params:
   helpDocsLink: NA
@@ -33,8 +33,8 @@ Projected resource curation process:
 3. Sage Bionetworks stores metadata using the secure [Synapse platform](`r params$synURL`)
 4. Resources are listed on the [`r params$portalName`](`r params$portalURL`)
 
-**Please note**: Sage Bionetworks does not intend to provide centralized storage for datasets, tools, or resources for the MC^2^ Center. Our goal is to help ensure data is FAIR (Findable, Accessible, Interoperable, and Reusable) and housed in publicly-available repositories. 
+**Please note**: Sage Bionetworks does not require datasets, tools, or resources for the MC^2^ Center to be stored via Synapse. Our goal is to help ensure data is FAIR (Findable, Accessible, Interoperable, and Reusable) and housed in NIH-supported repositories. A list of supported repositories can be found [here](https://sharing.nih.gov/data-management-and-sharing-policy/sharing-scientific-data/repositories-for-sharing-scientific-data) and NIH guidelines for selecting a repository can be found [here](https://sharing.nih.gov/data-management-and-sharing-policy/sharing-scientific-data/selecting-a-data-repository). 
 
-To help Sage Bionetworks support resource sharing within the MC^2^ Center, we are requesting that all members provide a few details about the projects they are working on.
+To help Sage Bionetworks support resource sharing within the MC^2^ Center, we are requesting that all members provide a few details about the projects they are working on. __Contributing information via this form is voluntary and does not require your eventual distribution of resources.__ 
 
 To begin, please provide the information requested below.
