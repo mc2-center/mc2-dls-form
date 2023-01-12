@@ -4,25 +4,25 @@ Meta:
 Inputs:
   govSA_1:
     name: govSA
-    type: radio
+    type: checkbox
     value: 1
     form: dsp
   govSA_2:
     name: govSA
     id: govSA
-    type: radio
+    type: checkbox
     value: 2
     form: dsp
   govSA_3:
     name: govSA
     id: govSA
-    type: radio
+    type: checkbox
     value: 3
     form: dsp
   govSA_4:
     name: govSA
     id: govSA
-    type: radio
+    type: checkbox
     value: 4
     form: dsp
   projectDataLicense:

@@ -3,13 +3,10 @@ title: "Data Landscape Survey"
 author: "Sage Bionetworks"
 date: ""
 output:
-  html_document:
-    css: style.css
+  rmdformats::readthedown:
     includes:
       in_header: header.html
       in_footer: footer.html
-    theme: paper
-  pdf_document: default
 params:
   data: null
   defaultfundingAgencyFullName: National Cancer Institute
@@ -34,9 +31,8 @@ params:
 
 ```{r setup, echo=FALSE, message=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
-library(formd)
+library(formd, rmdformats)
 load(file = "formd-mc2.RData")
-formChecklistContext(params$dsp_custom_config)
 .F <- formInputContext(params$dsp_custom_config, params$data)
 ```
 ![](MC2Logo-FNL-FullNameHRZ.png)
@@ -55,6 +51,8 @@ formChecklistContext(params$dsp_custom_config)
 
 ```{r child = 'MC2_tools.Rmd'}
 ```
+
+## Submit survey responses
 
 **Form Date** `r RIA(.F$filledDate)`
 

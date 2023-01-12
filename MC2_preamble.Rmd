@@ -1,7 +1,7 @@
 ---
 title: "MC2 Data Landscape Survey"
 author: "Sage Bionetworks"
-date: "1/10/2023"
+date: "1/12/2023"
 output:
   html_document:
     css: style.css
@@ -22,7 +22,7 @@ load(file = "formd-mc2.RData") #load modified functions
 .F <- formInputContext(params$dsp_core_config, params$data)
 ```
 
-## Project information
+# Project information
 
 **Project Title** `r RIA(.F$projectTitle)`
 
@@ -43,7 +43,7 @@ load(file = "formd-mc2.RData") #load modified functions
 **Project End Date** `r RIA(.F$projectEndDate)`
 
 
-## Resource information
+# Resource information
 
 By providing information on the datasets, computational tools, and models you plan to share over the next year, you will help us determine how we prioritize and support:
 
@@ -54,38 +54,3 @@ By providing information on the datasets, computational tools, and models you pl
 ### Directions for survey
 
 **Type your answers into the table cells below. Controlled fields will display terms we have on file when you begin typing. You are not required to select a term from this list if a suitable entry is not currently available. For each assay, tool, or model, please add a separate row to the corresponding table.**
-
-### Datasets
-#### Fields:
-- **Label**: A short, descriptive label for the dataset described in the row
-
-- **Assay**: Controlled field; the assay used to generate the dataset that will be shared
-
-- **Format**: Controlled field; the format used to store the shared data
-
-- **Sample count**: The number of samples for which data will be shared. For single cell experiments, each cell should be counted as a single sample.
-
-- **Species**: Controlled field; the species of origin for the dataset being shared. _Human-derived data may require specific resource sharing considerations._
-
-- **Data repository**: Name of the storage service where data will be housed.
-
-- **Planned upload date**: The date by which you plan to upload data to the identified repository.
-
-<!-- Deposit table starts here -->
-#### Dataset information {#deposits}
-
-`r RIA(.F$datasetTable)`
-
-### Tools and computational models
-#### Fields:
-- **Function**: Controlled field; the primary functionality of the computational tool or model.
-
-- **Type**: Controlled field; how the tool or model has been implemented for access by other users.
-
-- **Topic**: Controlled field; general scientific domain the software or model serves.
-
-#### Computational tool or model information {#tools}
-
-`r RIA(.F$toolTable)`
-
-`r RIA(.F$dspCoreVersion)`

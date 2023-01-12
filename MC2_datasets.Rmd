@@ -1,0 +1,38 @@
+---
+title: "MC2 Data Landscape Survey"
+author: "Sage Bionetworks"
+date: "1/12/2023"
+output:
+  html_document:
+    css: style.css
+    includes:
+      in_header: header.html
+      in_footer: footer.html
+  pdf_document: default
+params:
+  portalName: Cancer Complexity Knowledge Portal
+  portalURL: https://www.cancercomplexity.synapse.org/
+  dsp_core_config: dsp_core_config.yml
+  data: "../../../../../tests/test.json" # required if rendering to PDF
+---
+
+## Datasets
+#### Fields:
+- **Label**: A short, descriptive label for the dataset described in the row
+
+- **Assay**: Controlled field; the assay used to generate the dataset that will be shared
+
+- **Format**: Controlled field; the format used to store the shared data
+
+- **Sample count**: The number of samples for which data will be shared. For single cell experiments, each cell should be counted as a single sample.
+
+- **Species**: Controlled field; the species of origin for the dataset being shared. _Human-derived data may require specific resource sharing considerations._
+
+- **Data repository**: Name of the storage service where data will be housed.
+
+- **Planned upload date**: The date by which you plan to upload data to the identified repository.
+
+<!-- Deposit table starts here -->
+#### Dataset information {#deposits}
+
+`r RIA(.F$datasetTable)`

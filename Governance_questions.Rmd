@@ -1,7 +1,7 @@
 ---
 title: "Data Governance Assessment"
 author: "Sage Bionetworks"
-date: "12/9/2022"
+date: "1/12/2023"
 output:
   html_document: default
   pdf_document: default
@@ -16,15 +16,15 @@ suppressPackageStartupMessages(library(formd))
 .F <- formInputContext(params$SA_config, params$data)
 ```
 
-#### Data Sensitivity Assessment
+## Data Sensitivity Assessment
 
 _Please fill in the following to help us understand the nature of the data and help determine if additional governance forms are needed._
 
-These data:
+One or more of these datasets:
 
   `r RIA(.F$govSA_1)`  (1) Are not sensitive (i.e., do not meet any of the criteria below), and can be shared broadly without restriction following the embargo period, if applicable OR
               
-  `r RIA(.F$govSA_2)`  (2) Are derived from humans OR
+  `r RIA(.F$govSA_2)`  (2) Are derived from human subjects and require controlled access OR
               
   `r RIA(.F$govSA_3)`  (3) Are not derived from humans but for some other reason cannot be shared openly/need to be shared with restrictions on access or data use after the project period ends OR
               

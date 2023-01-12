@@ -1,0 +1,35 @@
+---
+title: "MC2 Data Landscape Survey"
+author: "Sage Bionetworks"
+date: "1/12/2023"
+output:
+  html_document:
+    css: style.css
+    includes:
+      in_header: header.html
+      in_footer: footer.html
+  pdf_document: default
+params:
+  portalName: Cancer Complexity Knowledge Portal
+  portalURL: https://www.cancercomplexity.synapse.org/
+  dsp_core_config: dsp_core_config.yml
+  data: "../../../../../tests/test.json" # required if rendering to PDF
+---
+
+```{r echo=FALSE, message=FALSE}
+suppressPackageStartupMessages(library(formd))
+load(file = "formd-mc2.RData") #load modified functions
+.F <- formInputContext(params$dsp_core_config, params$data)
+```
+
+## Tools and computational models
+#### Fields:
+- **Function**: Controlled field; the primary functionality of the computational tool or model.
+
+- **Type**: Controlled field; how the tool or model has been implemented for access by other users.
+
+- **Topic**: Controlled field; general scientific domain the software or model serves.
+
+#### Computational tool or model information {#tools}
+
+`r RIA(.F$toolTable)`
