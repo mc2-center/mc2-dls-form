@@ -5,8 +5,8 @@ date: ""
 output:
   rmdformats::readthedown:
     includes:
-      in_header: header.html
-      in_footer: footer.html
+      in_header: ../configs/header.html
+      in_footer: ../configs/footer.html
 params:
   data: null
   defaultfundingAgencyFullName: National Cancer Institute
@@ -21,18 +21,18 @@ params:
   # embargoPeriod: the embargo period # common params already defined
   community: MC2
   # -- DSP_Core -- #
-  dsp_core_config: dsp_core_config.yml
+  dsp_core_config: ../configs/dsp_core_config.yml
   # -- Custom meta/parameters for this form -- #
-  dsp_custom_config: dsp_custom_config.yml
+  dsp_custom_config: ../configs/dsp_custom_config.yml
   # -- Gov -- #
-  SA_config: gov_SA_config.yml
+  SA_config: ../configs/gov_SA_config.yml
   #addendum_2_config: addendum_2_config.yml
 ---
 
 ```{r setup, echo=FALSE, message=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 library(formd, rmdformats)
-load(file = "formd-mc2.RData")
+load(file = "../tools/formd-mc2.RData")
 .F <- formInputContext(params$dsp_custom_config, params$data)
 ```
 ![](MC2Logo-FNL-FullNameHRZ.png)

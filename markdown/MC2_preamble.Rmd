@@ -6,19 +6,19 @@ output:
   html_document:
     css: style.css
     includes:
-      in_header: header.html
-      in_footer: footer.html
+      in_header: ../configs/header.html
+      in_footer: ../configs/footer.html
   pdf_document: default
 params:
   portalName: Cancer Complexity Knowledge Portal
   portalURL: https://www.cancercomplexity.synapse.org/
-  dsp_core_config: dsp_core_config.yml
+  dsp_core_config: ../configs/dsp_core_config.yml
   data: "../../../../../tests/test.json" # required if rendering to PDF
 ---
 
 ```{r echo=FALSE, message=FALSE}
 suppressPackageStartupMessages(library(formd))
-load(file = "formd-mc2.RData") #load modified functions
+load(file = "../tools/formd-mc2.RData") #load modified functions
 .F <- formInputContext(params$dsp_core_config, params$data)
 ```
 
