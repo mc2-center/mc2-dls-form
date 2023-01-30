@@ -35,4 +35,6 @@ params:
 <!-- Deposit table starts here -->
 #### Dataset information {#deposits}
 
+**Please note**: You may type answers, including "Other", "Unsure", or "Do not know", into any fields as applicable.
+
 `r RIA(.F$datasetTable)`

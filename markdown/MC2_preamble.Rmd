@@ -34,7 +34,7 @@ load(file = "../tools/formd-mc2.RData") #load modified functions
 
 **Email Address of Principal Investigator** `r RIA(.F$projectPIEmail)`
 
-**Name of Point of Contact (Data Coordinator)** `r RIA(.F$projectPOC)`
+**Name of Point of Contact (Resource Coordinator)** `r RIA(.F$projectPOC)`
 
 **Email Address of Point of Contact** `r RIA(.F$projectPOCEmail)`
 
