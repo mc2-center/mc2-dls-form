@@ -30,6 +30,8 @@ load(file = "../tools/formd-mc2.RData") #load modified functions
 
 - **Topic**: Controlled field; general scientific domain the software or model serves.
 
+**Please note**: If you would like to share multiple components/interfaces or a tool (e.g., a web app, API service, and Python library), please add an entry for each Type.
+
 #### Computational tool or model information {#tools}
 
 `r RIA(.F$toolTable)`
