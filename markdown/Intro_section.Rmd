@@ -28,7 +28,7 @@ The Multi-Consortia Coordinating (MC^2^) Center at Sage Bionetworks is intended 
 
 To help Sage Bionetworks support resource sharing within the MC^2^ Center, we are requesting that all members provide a few details about the projects they are working on. __Contributing information via this form is voluntary and does not require your eventual distribution of resources.__
 
-Projected resource curation process:
+Tentative resource curation process:
 
 1. Resources are generated and transferred to NIH-supported repositories (independently by generators or guided by the MC^2^ Center)
 2. Metadata describing the resource(s) are captured by Sage Bionetworks according to standardized models agreed upon by the community
