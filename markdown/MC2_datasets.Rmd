@@ -22,7 +22,7 @@ params:
 
 - **Assay**: Controlled field; the assay used to generate the dataset that will be shared
 
-- **Format**: Controlled field; the format used to store the shared data
+- **Format**: Controlled field; the format used to store the shared data (e.g. txt, tiff, bam, etc.)
 
 - **Sample count**: The estimated number of samples for which data will be shared. For single cell experiments, each cell should be counted as a single sample.
 
