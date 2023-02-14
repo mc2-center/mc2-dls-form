@@ -24,23 +24,31 @@ load(file = "../tools/formd-mc2.RData") #load modified functions
 
 # Project information
 
-**Grant Title** `r RIA(.F$projectTitle)`
+**Grant Title**  
+`r RIA(.F$projectTitle)`
 
-**Grant Number** `r RIA(.F$projectGrantId)`
+**Grant Number**  
+`r RIA(.F$projectGrantId)`
 
-**Name of Principal Investigator(s)** `r RIA(.F$projectPI)`  
-Please enter multiple PIs as a comma-separated list
+**Name of Principal Investigator(s)**  
+Please enter multiple PIs as a comma-separated list  
+`r RIA(.F$projectPI)`
 
-**Email Address of Principal Investigator(s)** `r RIA(.F$projectPIEmail)`  
-Please enter multiple PI emails as a comma-separated list
+**Email Address of Principal Investigator(s)**  
+Please enter multiple PI emails as a comma-separated list  
+`r RIA(.F$projectPIEmail)`
 
-**Name of Point of Contact (Resource Coordinator)** `r RIA(.F$projectPOC)`  
+**Name of Point of Contact (Resource Coordinator)**  
+`r RIA(.F$projectPOC)`  
 
-**Email Address of Point of Contact** `r RIA(.F$projectPOCEmail)`
+**Email Address of Point of Contact**  
+`r RIA(.F$projectPOCEmail)`
 
-**Name of Institution** `r RIA(.F$projectInstitution)`
+**Name of Institution**  
+`r RIA(.F$projectInstitution)`
 
-**Grant End Date** `r RIA(.F$projectEndDate)`
+**Grant End Date**  
+`r RIA(.F$projectEndDate)`
 
 
 # Resource information
