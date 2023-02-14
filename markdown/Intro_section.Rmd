@@ -38,6 +38,6 @@ Tentative resource curation process:
 
 **Please note**: Sage Bionetworks does not require datasets, tools, or resources for the MC^2^ Center to be stored via Synapse. Our goal is to help ensure data is FAIR (Findable, Accessible, Interoperable, and Reusable) and housed in NIH-supported repositories. A list of supported repositories can be found [here](https://sharing.nih.gov/data-management-and-sharing-policy/sharing-scientific-data/repositories-for-sharing-scientific-data) and NIH guidelines for selecting a repository can be found [here](https://sharing.nih.gov/data-management-and-sharing-policy/sharing-scientific-data/selecting-a-data-repository). 
 
-For general questions about this survey, please contact `r params$mainEmail` 
+For general questions about this survey, please contact `r params$mainEmail`. 
 
 To begin, please provide the information requested below for the grant you are working on. If you are working on multiple grants, please submit a form for each one.
