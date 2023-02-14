@@ -26,8 +26,6 @@ load(file = "../tools/formd-mc2.RData") #load modified functions
 
 **Project Title** `r RIA(.F$projectTitle)`
 
-**Project Description** `r RIA(.F$projectDescription)`
-
 **Project Grant Number** `r RIA(.F$projectGrantId)`
 
 **Name of Principal Investigator** `r RIA(.F$projectPI)`
