@@ -1,7 +1,7 @@
 ---
 title: "Data Governance Assessment"
 author: "Sage Bionetworks"
-date: "1/12/2023"
+date: "2/15/2023"
 output:
   html_document: default
   pdf_document: default
@@ -20,13 +20,13 @@ suppressPackageStartupMessages(library(formd))
 
 _Please fill in the following to help us understand the nature of the data and help determine if additional governance forms are needed._
 
-One or more of these datasets:
+One or more of these datasets (select all that apply):
 
-  `r RIA(.F$govSA_1)`  (1) Are not sensitive (i.e., do not meet any of the criteria below), and can be shared broadly without restriction following the embargo period, if applicable OR
+  `r RIA(.F$govSA_1)`  (1) Are derived from human subjects and require controlled access OR
               
-  `r RIA(.F$govSA_2)`  (2) Are derived from human subjects and require controlled access OR
+  `r RIA(.F$govSA_2)`  (2) Are not derived from humans but for some other reason cannot be shared openly/need to be shared with restrictions on access or data use after the project period ends OR
               
-  `r RIA(.F$govSA_3)`  (3) Are not derived from humans but for some other reason cannot be shared openly/need to be shared with restrictions on access or data use after the project period ends OR
+  `r RIA(.F$govSA_3)`  (3) Are not sensitive (i.e., do not meet any of the criteria above), and can be shared broadly without restriction following the embargo period, if applicable OR
               
   `r RIA(.F$govSA_4)`  (4) I am not sure whether these data are sensitive.
 
