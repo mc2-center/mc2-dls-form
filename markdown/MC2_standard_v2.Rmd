@@ -55,7 +55,8 @@ load(file = "../tools/formd-mc2.RData")
 
 ## Submit survey responses
 
-**Form Date** `r RIA(.F$filledDate)`
+**Form Date**  
+`r RIA(.F$filledDate)`  
 
 `r formSubmit(.F$submit)`
 
