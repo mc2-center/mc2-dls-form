@@ -18,7 +18,7 @@ params:
 
 ## Before you begin 
 
-The Multi-Consortia Coordinating (MC^2^) Center Resource Coordination Hub at Sage Bionetworks is intended to promote data, tool, and expertise exchange among members of associated National Cancer Institute Division of Cancer Biology consortia, including:
+The Multi-Consortia Coordinating (MC^2^) Center at Sage Bionetworks is intended to promote data, tool, and expertise exchange among members of associated National Cancer Institute Division of Cancer Biology consortia, including:
 
 - Cancer Systems Biology Consortium
 - Physical Sciences in Oncology Network
@@ -27,12 +27,12 @@ The Multi-Consortia Coordinating (MC^2^) Center Resource Coordination Hub at Sag
 - Metastasis Research Network
 - Patient-Derived Models of Cancer
 
-To help Sage Bionetworks support resource sharing, we are requesting that members provide a few details about the projects they are working on for their respective grants. __Contributing information via this form is voluntary and does not require your eventual distribution of resources.__
+To help Sage Bionetworks support resource sharing within the MC^2^ Center, we are requesting that all members provide a few details about the projects they are working on for their respective grants. __Contributing information via this form is voluntary and does not require your eventual distribution of resources.__
 
 Tentative resource curation process:
 
-1. Resources are generated and transferred to NIH-supported repositories (independently by generators or guided by the MC^2^ Center) or otherwise appropriate destinations compliant with the [NIH Data Management and Sharing Policy](https://sharing.nih.gov/data-management-and-sharing-policy)
-2. Metadata describing the resource(s) are provided by generators and captured by Sage Bionetworks according to standardized models approved by the community
+1. Resources are generated and ultimately transferred to NIH-supported repositories (independently by generators or guided by the MC^2^ Center) or otherwise appropriate destinations compliant with the [NIH Data Management and Sharing Policy](https://sharing.nih.gov/data-management-and-sharing-policy)
+2. Metadata describing the resource(s) are provided by generators and captured by Sage Bionetworks according to standardized models agreed upon by the community
 3. Sage Bionetworks stores metadata using the secure [Synapse platform](`r params$synURL`)
 4. Resources are listed on the [`r params$portalName`](`r params$portalURL`)
 
@@ -40,4 +40,4 @@ Tentative resource curation process:
 
 For general questions about this survey, please contact `r params$mainEmail`. 
 
-To begin, please provide the information requested below. This survey should be completed as a single response for each grant, ideally by those generating or managing the data and resources for that grant. If you are working on multiple grants, please submit a form for each one.
+To begin, please provide the information requested below for the grant you are working on. If you are working on multiple grants, please submit a form for each one.
