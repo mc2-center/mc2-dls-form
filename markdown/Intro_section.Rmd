@@ -18,7 +18,7 @@ params:
 
 ## Before you begin 
 
-The Multi-Consortia Coordinating (MC^2^) Center at Sage Bionetworks is intended to promote data, tool, and expertise exchange among members of associated National Cancer Institute Division of Cancer Biology consortia, including:
+The Multi-Consortia Coordinating (MC^2^) Center Resource Coordination Hub at Sage Bionetworks is intended to promote data, tool, and expertise exchange among members of associated National Cancer Institute Division of Cancer Biology consortia, including:
 
 - Cancer Systems Biology Consortium
 - Physical Sciences in Oncology Network
