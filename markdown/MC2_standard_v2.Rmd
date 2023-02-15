@@ -20,7 +20,7 @@ params:
   synURL: https://www.synapse.org/
   fundingAgency: NCI
   # embargoPeriod: the embargo period # common params already defined
-  community: MC2
+  community: MC2 Center
   # -- DSP_Core -- #
   dsp_core_config: ../configs/dsp_core_config.yml
   # -- Custom meta/parameters for this form -- #
@@ -55,12 +55,13 @@ load(file = "../tools/formd-mc2.RData")
 
 ## Submit survey responses
 
-**Form Date** `r RIA(.F$filledDate)`
+**Form Date**  
+`r RIA(.F$filledDate)`  
 
 `r formSubmit(.F$submit)`
 
 We will review and send you a copy of what we have on file, but feel free to use `Ctrl+P` to save a copy now.  
-If any adjustments need to be made, please email `r params$dccEmail`.
+If any adjustments need to be made, please email `r params$mainEmail`.
 
 <!--hidden fields for tracking form meta, e.g. versions" -->
 `r RIA(.F$formCustomVersion)`

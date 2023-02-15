@@ -24,30 +24,37 @@ load(file = "../tools/formd-mc2.RData") #load modified functions
 
 # Project information
 
-**Project Title** `r RIA(.F$projectTitle)`
+**Grant Title**  
+`r RIA(.F$projectTitle)`  
 
-**Project Grant Number** `r RIA(.F$projectGrantId)`
+**Grant Number**  
+`r RIA(.F$projectGrantId)`  
 
-**Name of Principal Investigator(s)** `r RIA(.F$projectPI)`  
-Please enter multiple PIs as a comma-separated list
+**Name of Principal Investigator(s)**  
+Please enter multiple PI names as a comma-separated list  
+`r RIA(.F$projectPI)`   
 
-**Email Address of Principal Investigator(s)** `r RIA(.F$projectPIEmail)`  
-Please enter multiple PI emails as a comma-separated list
+**Email Address of Principal Investigator(s)**  
+Please enter multiple PI emails as a comma-separated list  
+`r RIA(.F$projectPIEmail)`   
 
-**Name of Point of Contact (Resource Coordinator)** `r RIA(.F$projectPOC)`  
+**Name of Point of Contact (Resource Coordinator)**  
+`r RIA(.F$projectPOC)`  
 
-**Email Address of Point of Contact** `r RIA(.F$projectPOCEmail)`
+**Email Address of Point of Contact**  
+`r RIA(.F$projectPOCEmail)`  
 
-**Name of Institution** `r RIA(.F$projectInstitution)`
+**Name of Institution**  
+`r RIA(.F$projectInstitution)`  
 
-**Project End Date** `r RIA(.F$projectEndDate)`
-
+**Grant End Date**  
+`r RIA(.F$projectEndDate)`  
 
 # Resource information
 
 By providing information on the datasets, computational tools, and models you plan to share over the next year, you will help us determine how we prioritize and support:
 
-- metadata standards adoption
+- metadata standards design and implementation
 - data transfer to [NIH-supported repositories](https://sharing.nih.gov/data-management-and-sharing-policy/sharing-scientific-data/repositories-for-sharing-scientific-data)
 - expansion of the [`r params$portalName`](`r params$portalURL`)
 

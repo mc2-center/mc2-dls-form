@@ -18,9 +18,9 @@ params:
 
 ## Datasets
 #### Fields:
-- **Label**: A short, descriptive label for the dataset described in the row
+- **Label**: A short, descriptive label for the dataset described in the row.
 
-- **Assay**: Controlled field; the assay used to generate the dataset that will be shared
+- **Assay**: Controlled field; the assay used to generate the dataset that will be shared.
 
 - **Format**: Controlled field; the format used to store the shared data (e.g. txt, tiff, bam, etc.)
 
