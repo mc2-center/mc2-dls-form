@@ -20,7 +20,7 @@ params:
   synURL: https://www.synapse.org/
   fundingAgency: NCI
   # embargoPeriod: the embargo period # common params already defined
-  community: MC2
+  community: MC2 Center
   # -- DSP_Core -- #
   dsp_core_config: ../configs/dsp_core_config.yml
   # -- Custom meta/parameters for this form -- #
