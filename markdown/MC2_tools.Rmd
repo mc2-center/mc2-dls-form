@@ -1,7 +1,7 @@
 ---
 title: "MC2 Data Landscape Survey"
 author: "Sage Bionetworks"
-date: "2/14/2023"
+date: "1/12/2023"
 output:
   html_document:
     css: style.css
@@ -26,7 +26,7 @@ load(file = "../tools/formd-mc2.RData") #load modified functions
 #### Fields:
 - **Function**: Controlled field; the primary functionality of the computational tool or model.
 
-- **Type**: Controlled field; how the tool or model has been or will be implemented for access by other users.
+- **Type**: Controlled field; how the tool or model has been implemented for access by other users.
 
 - **Topic**: Controlled field; general scientific domain the software or model serves.
 
