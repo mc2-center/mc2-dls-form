@@ -27,7 +27,7 @@ The Multi-Consortia Coordinating (MC^2^) Center Resource Coordination Hub at Sag
 - Metastasis Research Network
 - Patient-Derived Models of Cancer
 
-To help Sage Bionetworks support resource sharing within the MC^2^ Center, we are requesting that all members provide a few details about the projects they are working on for their respective grants. __Contributing information via this form is voluntary and does not require your eventual distribution of resources.__
+To help Sage Bionetworks support resource sharing, we are requesting information on the types of resources that consortia members are producing as a part of their funded research activities. __Contributing information via this form is voluntary and does not require your eventual distribution of resources.__
 
 Tentative resource curation process:
 
