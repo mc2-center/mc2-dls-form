@@ -166,7 +166,6 @@ Inputs:
      type: select-schema
      schema: https://raw.githubusercontent.com/mc2-center/data-models/main/mc2.model.jsonld
      range: bts:ProjectGrantNumber
-     multiple: false
      sort: true
      title: Number of grant associated with resources
      form: dsp
