@@ -4,7 +4,7 @@ Inputs:
   dspCoreVersion:
     name: dspCoreVersion
     type: hidden
-    value: "[DSP_Core_Version_Apr_2022]"
+    value: "[MC2Center_Core_Version_Feb_2023]"
     form: dsp
   datasetTable:
     id: datasetTable
@@ -166,7 +166,8 @@ Inputs:
      type: select-schema
      schema: https://raw.githubusercontent.com/mc2-center/data-models/main/mc2.model.jsonld
      range: bts:ProjectGrantNumber
-     multiple: true
+     multiple: false
+     sort: true
      title: Number of grant associated with resources
      form: dsp
      class: compact
