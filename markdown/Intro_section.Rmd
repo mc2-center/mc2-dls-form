@@ -40,4 +40,4 @@ Tentative resource curation process:
 
 For general questions about this survey, please contact `r params$mainEmail`. 
 
-To begin, please provide the information requested below for the grant you are working on. If you are working on multiple grants, please submit a form for each one.
+To begin, please provide the information requested below. This survey should be completed as a single response for each grant, ideally by those generating or managing the data and resources for that grant. If you are working on multiple grants, please submit a form for each one.
