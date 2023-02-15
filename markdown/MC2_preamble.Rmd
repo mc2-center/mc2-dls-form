@@ -47,7 +47,7 @@ Please enter multiple PI emails as a comma-separated list
 
 By providing information on the datasets, computational tools, and models you plan to share over the next year, you will help us determine how we prioritize and support:
 
-- metadata standards adoption
+- metadata standards design and implementation
 - data transfer to [NIH-supported repositories](https://sharing.nih.gov/data-management-and-sharing-policy/sharing-scientific-data/repositories-for-sharing-scientific-data)
 - expansion of the [`r params$portalName`](`r params$portalURL`)
 
