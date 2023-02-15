@@ -31,7 +31,7 @@ To help Sage Bionetworks support resource sharing within the MC^2^ Center, we ar
 
 Tentative resource curation process:
 
-1. Resources are generated and ultimately transferred to NIH-supported repositories (independently by generators or guided by the MC^2^ Center) or otherwise appropriate destinations compliant with the [NIH Data Management and Sharing Policy](https://sharing.nih.gov/data-management-and-sharing-policy)
+1. Resources are generated and transferred to NIH-supported repositories (independently by generators or guided by the MC^2^ Center) or otherwise appropriate destinations compliant with the [NIH Data Management and Sharing Policy](https://sharing.nih.gov/data-management-and-sharing-policy)
 2. Metadata describing the resource(s) are provided by generators and captured by Sage Bionetworks according to standardized models agreed upon by the community
 3. Sage Bionetworks stores metadata using the secure [Synapse platform](`r params$synURL`)
 4. Resources are listed on the [`r params$portalName`](`r params$portalURL`)
