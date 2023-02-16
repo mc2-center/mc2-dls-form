@@ -5,6 +5,10 @@
 function addRow(id) {
   var rtbody = document.getElementById(id).getElementsByTagName('tbody')[0];
   var clone = rtbody.rows[0].cloneNode(true);
+  var InputType = clone.getElementsByTagName("input");
+  for (var i=0; i<InputType.length; i++){
+    InputType[i].value='';
+  }
   rtbody.appendChild(clone);
 }
   
