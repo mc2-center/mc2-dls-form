@@ -105,7 +105,7 @@ Inputs:
         title: select the research topic the tool is used in
         class: compact
         list: topicList
-      - name: depositDeadline
+      - name: dateAvailable
         display: Planned date available
         type: date
         form: dsp
@@ -145,7 +145,7 @@ Inputs:
         title: tumor type the system is intended to model
         form: dsp
         class: compact
-      - name: depositDeadline
+      - name: dateSampleAvailable
         display: Planned date available
         type: date
         form: dsp
