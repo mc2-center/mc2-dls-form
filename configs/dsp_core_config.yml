@@ -106,7 +106,7 @@ Inputs:
         class: compact
         list: topicList
       - name: depositDeadline
-        display: Planned upload date
+        display: Planned date available
         type: date
         form: dsp
         title: when the data is expected to be completely deposited

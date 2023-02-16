@@ -28,7 +28,7 @@ params:
 
 - **Species**: Controlled field; the species of origin for the dataset being shared. _Human-derived data may require specific resource sharing considerations._
 
-- **Data repository**: Name of the storage service where data will be housed.
+- **Data repository**: Name of the storage service or repository where data will be housed.
 
 - **Planned upload date**: The estimated date by which you plan to upload data to the identified repository.
 
