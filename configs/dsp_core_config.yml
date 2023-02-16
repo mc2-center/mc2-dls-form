@@ -176,7 +176,7 @@ Inputs:
     form: dsp
   projectPIEmail:
     name: projectPIEmail
-    type: email
+    type: text
     form: dsp
   projectPOC:
     name: projectPOC
