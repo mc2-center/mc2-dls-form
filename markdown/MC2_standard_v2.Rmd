@@ -58,7 +58,8 @@ load(file = "../tools/formd-mc2.RData")
 **Form Date**  
 `r RIA(.F$filledDate)`  
 
-`r formSubmit(.F$submit)`
+`r formSubmit(.F$submit)`  
+`r formSave(.F$save)`
 
 We will review and send you a copy of what we have on file, but feel free to use `Ctrl+P` to save a copy now.  
 If any adjustments need to be made, please email `r params$mainEmail`.
