@@ -1,7 +1,7 @@
 ---
 title: "MC2 Data Landscape Survey"
 author: "Sage Bionetworks"
-date: "3/21/2023"
+date: "3/28/2023"
 output:
   html_document:
     css: style.css
@@ -23,8 +23,16 @@ load(file = "../tools/formd-mc2.RData") #load modified functions
 ```
 
 # Project information
+**Name of Principal Investigator(s)**  
+Please enter multiple PI names as a comma-separated list.  
+`r RIA(.F$projectPI)`
+
+**Email Address of Principal Investigator(s)**  
+Please enter multiple PI emails as a comma-separated list.  
+`r RIA(.F$projectPIEmail)`  
 
 **Grant Number**  
+(optional)  
 `r RIA(.F$projectGrantId)`  
 
 **Name of Point of Contact (Resource Coordinator)**  
