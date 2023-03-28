@@ -170,7 +170,6 @@ Inputs:
      title: Number of grant associated with resources
      form: dsp
      class: compact
-     required: true
   projectPI:
     name: projectPI
     type: text
@@ -183,12 +182,10 @@ Inputs:
     name: projectPOC
     type: text
     form: dsp
-    required: true
   projectPOCEmail:
     name: projectPOCEmail
     type: email
     form: dsp
-    required: true
   projectSynPrincipals:
     name: projectSynPrincipals
     type: text
