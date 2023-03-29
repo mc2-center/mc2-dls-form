@@ -32,7 +32,7 @@ Please enter multiple PI emails as a comma-separated list.
 `r RIA(.F$projectPIEmail)`  
 
 **Grant Number**  
-(optional)  
+Optional, but recommended. If you are unsure which number corresponds to your current grant, [NIH RePORTER](https://reporter.nih.gov/advanced-search) can be used to identify your grant ID.  
 `r RIA(.F$projectGrantId)`  
 
 **Name of Point of Contact (Resource Coordinator)**  
