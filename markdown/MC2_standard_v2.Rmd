@@ -53,9 +53,13 @@ load(file = "../tools/formd-mc2.RData")
 ```{r child = 'MC2_tools.Rmd'}
 ```
 
-## Submit survey responses
+# Supplemental details  
+**Please use this field to provide any other project or resource details not captured in the responses above**  
+`r RIA(.F$freeResponse)`  
 
-**Form Date**  
+# Submit survey responses
+
+**Form Date <span style="color:red">\*</span>**  
 `r RIA(.F$filledDate)`  
 
 `r formSubmit(.F$submit)`

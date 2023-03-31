@@ -4,7 +4,7 @@ Inputs:
   dspCoreVersion:
     name: dspCoreVersion
     type: hidden
-    value: "[MC2Center_Core_Version_Feb_2023]"
+    value: "[MC2Center_Core_Version_Mar_2023]"
     form: dsp
   datasetTable:
     id: datasetTable
@@ -174,18 +174,22 @@ Inputs:
     name: projectPI
     type: text
     form: dsp
+    required: true
   projectPIEmail:
     name: projectPIEmail
     type: text
     form: dsp
+    required: true
   projectPOC:
     name: projectPOC
     type: text
     form: dsp
+    required: true
   projectPOCEmail:
     name: projectPOCEmail
     type: email
     form: dsp
+    required: true
   projectSynPrincipals:
     name: projectSynPrincipals
     type: text
@@ -207,6 +211,12 @@ Inputs:
     name: filledDate
     id: filled-date
     type: date
+    form: dsp
+    required: true
+  freeResponse:
+    name: freeResponse
+    type: textarea
+    class: wide-textarea
     form: dsp
   submit:
     form: dsp
