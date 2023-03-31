@@ -59,7 +59,7 @@ load(file = "../tools/formd-mc2.RData")
 
 # Submit survey responses
 
-**Form Date**  
+**Form Date <span style="color:red">\*</span>**  
 `r RIA(.F$filledDate)`  
 
 `r formSubmit(.F$submit)`

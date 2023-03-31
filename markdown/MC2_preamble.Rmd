@@ -1,7 +1,7 @@
 ---
 title: "MC2 Data Landscape Survey"
 author: "Sage Bionetworks"
-date: "3/28/2023"
+date: "3/31/2023"
 output:
   html_document:
     css: style.css
@@ -23,11 +23,13 @@ load(file = "../tools/formd-mc2.RData") #load modified functions
 ```
 
 # Project information
-**Name of Principal Investigator(s)**  
+**_Fields marked with <span style="color:red">\*</span> are required_**  
+
+**Name of Principal Investigator(s) <span style="color:red">\*</span> **  
 Please enter multiple PI names as a comma-separated list.  
 `r RIA(.F$projectPI)`
 
-**Email Address of Principal Investigator(s)**  
+**Email Address of Principal Investigator(s) <span style="color:red">\*</span> **  
 Please enter multiple PI emails as a comma-separated list.  
 `r RIA(.F$projectPIEmail)`  
 
@@ -35,11 +37,11 @@ Please enter multiple PI emails as a comma-separated list.
 Optional, but recommended. If you are unsure which number corresponds to your current grant, [NIH RePORTER](https://reporter.nih.gov/advanced-search) can be used to identify your grant ID.  
 `r RIA(.F$projectGrantId)`  
 
-**Name of Point of Contact (Resource Coordinator)**  
+**Name of Point of Contact (Resource Coordinator) <span style="color:red">\*</span> **  
 Please provide the name of the individual you want us to contact with questions about resource sharing by your group.  
 `r RIA(.F$projectPOC)`  
 
-**Email Address of Point of Contact**  
+**Email Address of Point of Contact <span style="color:red">\*</span> **  
 Please provide the email address of the individual listed as Point of Contact above.  
 `r RIA(.F$projectPOCEmail)`  
 
